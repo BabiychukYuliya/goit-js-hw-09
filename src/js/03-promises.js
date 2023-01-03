@@ -26,6 +26,7 @@ const delayStep = document.querySelector('[name="step"]');
 
 btnCreatePromise.addEventListener('click', evn => {
   evn.preventDefault();
+  btnCreatePromise.disabled = true;
   const delayFirst = Number(delay.value);
   const step = Number(delayStep.value);
 
@@ -38,4 +39,4 @@ btnCreatePromise.addEventListener('click', evn => {
   });;
   }
 });
-
+btnCreatePromise.disabled = false;

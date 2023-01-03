@@ -66,7 +66,7 @@ console.log('counter', counter);
     // console.log('counter', counter);
     btnStart.disabled = true;
 
-    if (counter < 0) {
+    if (counter <= 1000) {
       clearInterval(timerId);
       return;
     }
